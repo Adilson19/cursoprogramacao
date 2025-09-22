@@ -1,4 +1,3 @@
-
 import java.util.Locale;
 
 public class Main {
@@ -17,6 +16,10 @@ public class Main {
         Locale.setDefault(Locale.US);
         System.out.printf("%.4f%n", x);
         System.out.println("Ola  mundo! Sousa");
+        // Concatenando elementos
+        System.out.println("RESULTADO = " + x + " METROS");
+        // Outra maneira de concatenar
+        System.out.printf("RESULTADO = %.2f metros%n", x);
         
     }
 }
