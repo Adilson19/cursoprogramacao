@@ -5,6 +5,10 @@ public class Main {
         
         int y = 32;
         double x = 10.35784;
+        // String nome para depois o sistema retornar
+        String nome = "Adelino";
+        int idade = 25;
+        double renda = 50000.0;
         System.out.println(y);
         System.out.println(x);
         // "%.2f" -> representa o numero de casas decimais apos a virgula 
@@ -20,6 +24,8 @@ public class Main {
         System.out.println("RESULTADO = " + x + " METROS");
         // Outra maneira de concatenar
         System.out.printf("RESULTADO = %.2f metros%n", x);
+        // Exemplo de concatenacao que envolve 3 variaveis
+        System.out.printf("%s tem %d anos e ganha KZ %.2f KWANZA%n", nome, idade, renda);
         
     }
 }
