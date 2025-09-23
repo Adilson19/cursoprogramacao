@@ -1,16 +1,32 @@
-import java.util.Locale;
+//import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
-        Locale.setDefault(Locale.US);
+        //Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         
-        int x = sc.nextInt();
-        String dia;
+        //int x = sc.nextInt();
+        //String dia;
+        
+        double preco = 34.5;
+        //  APLICANDO OS CONHECIMENTOS DE VARIAVEL TERNARIA
+        double desconto = (preco < 20.0) ? preco * 0.1 : preco * 0.05;
+        /*            
+        if(preco < 20.0){
+            desconto = preco * 0.1;
+        }
+        else{
+            desconto = preco * 0.05;
+        }*/
+        System.out.println(desconto);
+        sc.close();
+        
+        
+        
         
         //  Estrutura SWITCH-CASE
-        switch(x){
+        /*switch(x){
             case 1:
                 dia = "domingo";
                 break;
@@ -37,7 +53,7 @@ public class Main {
                 break;            
         }
         System.out.println("Dia da Semana: " + dia);
-        sc.close();
+        sc.close();*/
         
         //  Estrutura IF-ELSE
         /*
