@@ -1,8 +1,30 @@
 //import java.util.Locale;
-//import java.util.Scanner;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
+        //  Estrutura condicional simples
+        
+        Scanner sc = new Scanner(System.in);
+        int hora;
+        
+        System.out.println("Quantas horas?");
+        hora = sc.nextInt();
+        
+        if( hora < 12 ){
+            System.out.println("Bom dia");
+        }
+        else{
+            if(hora < 18){
+                System.out.println("Boa tarde");
+            }else{
+                    System.out.println("Boa noite!");
+                }
+        }
+        
+        sc.close();
+        
+        /*
         double a = 4.0;
         double b = 9.0;
         double c = -4.0;
@@ -15,7 +37,7 @@ public class Main {
         x1 = (- b + Math.sqrt(delta)) / (2.0 * a);
         x2 = (- b - Math.sqrt(delta)) / (2.0 * a);
         System.out.printf("%.2f%n", x1);
-        System.out.printf("%.2f%n", x2);
+        System.out.printf("%.2f%n", x2);*/
         
         
         /*
