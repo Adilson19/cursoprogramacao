@@ -6,6 +6,67 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         
+        int x = sc.nextInt();
+        String dia;
+        
+        //  Estrutura SWITCH-CASE
+        switch(x){
+            case 1:
+                dia = "domingo";
+                break;
+            case 2:
+                dia = "segunda";
+                break;
+            case 3:
+                dia = "terca";
+                break;
+            case 4:
+                dia = "quarta";
+                break;
+            case 5:
+                dia = "quinta";
+                break;
+            case 6:
+                dia = "sexta";
+                break;
+            case 7:
+                dia = "sabado";
+                break;
+            default:
+                dia = "Valor Invalido";
+                break;            
+        }
+        System.out.println("Dia da Semana: " + dia);
+        sc.close();
+        
+        //  Estrutura IF-ELSE
+        /*
+        if(x == 1){
+            dia = "domingo";
+        }else if (x == 2){
+            dia = "segunda";
+        }else if (x == 3){
+            dia = "terca";
+        }else if (x == 4){
+            dia = "quarta";
+        }else if (x == 5){
+            dia = "quinta";
+        }else if (x == 6){
+            dia = "sexta";
+        }else if (x == 7){
+            dia = "sabado";
+        }else{
+            dia = "invalido";
+        }
+        
+        System.out.println("Dia da semana: " + dia);
+        
+        
+        
+        sc.close();*/
+        
+        /*
+            operadores de atribuicao cumulativas *= ; += ; -= ; %=
         int minutos = sc.nextInt();
         
         double conta = 50.0;
@@ -15,7 +76,7 @@ public class Main {
         
         System.out.printf("Valor da conta = R$ %.2f%n", conta);
                 
-        sc.close();
+        sc.close();*/
         
         
         
