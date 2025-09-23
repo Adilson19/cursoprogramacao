@@ -1,7 +1,49 @@
 import java.util.Locale;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
+        
+        //  ENTRADA DE DADOS EM JAVA
+        // Scanner - comando utilizado para fazer leitura de dados em Java
+        // sc.nextInt - para numeros inteiros
+        // sc.next - para strings
+        // sc.nextDouble - para numeros com virgula
+        
+        //  Declarando a variavel responsavel por armazenar os dados
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+        // Declarando uma variavel
+        //int x;
+        //double x;
+        //char x;
+        
+        // Para ler varios dados de uma so vez separados por espaco
+        String x;
+        int y;
+        double z;
+        
+        //  Recebendo varios elementos
+        x = sc.next();
+        y = sc.nextInt();
+        z = sc.nextDouble();
+        
+        //  Imprimindo varios elementos na tela
+        System.out.println("Dados digitados: ");
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println(z);
+        
+        
+        // Recebendo um valor
+        // com double pedira a localidade do sistema
+        //x = sc.nextDouble(); 
+        //x = sc.next().charAt(0);
+        //  Verificando se realmente funcionou
+        //System.out.println("Voce digitou: " + x);
+        
+        sc.close();
+        
         /*
         int y = 32;
         double x = 10.35784;
@@ -101,7 +143,7 @@ public class Main {
         System.out.println(resultado);*/
         
         //  Exemplo 5
-        
+        /*
         double a;
         int b;
         
@@ -109,8 +151,7 @@ public class Main {
         //  Casting
         b = (int) a;
         
-        System.out.println(b);
-        
+        System.out.println(b);*/
         
         
     }
