@@ -4,6 +4,29 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args){
         
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+        
+        int x;
+        String s1, s2, s3;
+        //  nextLine -  comando usado para ler a linha inteira
+        x = sc.nextInt();// Ao apertar o enter da uma quebra de linha
+        //  Simplismente para consumir o espaco
+        sc.nextLine();
+        s1 = sc.nextLine();
+        s2 = sc.nextLine();
+        s3 = sc.nextLine();
+        
+        System.out.println("DADOS DIGITADOS:");
+        System.out.println(x);
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
+        
+        
+        
+        
+        
         //  ENTRADA DE DADOS EM JAVA
         // Scanner - comando utilizado para fazer leitura de dados em Java
         // sc.nextInt - para numeros inteiros
@@ -11,15 +34,15 @@ public class Main {
         // sc.nextDouble - para numeros com virgula
         
         //  Declarando a variavel responsavel por armazenar os dados
-        Locale.setDefault(Locale.US);
-        Scanner sc = new Scanner(System.in);
+        //Locale.setDefault(Locale.US);
+        //Scanner sc = new Scanner(System.in);
         // Declarando uma variavel
         //int x;
         //double x;
         //char x;
         
         // Para ler varios dados de uma so vez separados por espaco
-        String x;
+        /*String x;
         int y;
         double z;
         
@@ -32,7 +55,7 @@ public class Main {
         System.out.println("Dados digitados: ");
         System.out.println(x);
         System.out.println(y);
-        System.out.println(z);
+        System.out.println(z);*/
         
         
         // Recebendo um valor
