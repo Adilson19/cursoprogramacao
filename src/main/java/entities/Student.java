@@ -9,25 +9,29 @@ public class Student {
         return notaUm + notaDois + notaTres;
     }
     
-    public String alunoClassificacao(){
-        if((notaUm + notaDois + notaTres) > (notaUm + notaDois + notaTres) * 0.60){
-            return "PASS";
-        }else if ((notaUm + notaDois + notaTres) < (notaUm + notaDois + notaTres) * 0.60){
-            return 
-                    "FAILED %n";
+    public boolean alunoClassificacao(        
+        if(showNota() >= 60.0){
+            return true;
+        }else{
+            return false;
         }
-        return 
-                "MISSING " 
-                + (notaUm + notaDois + notaTres - (notaUm + notaDois + notaTres) * 0.60) 
-                + " POINTS";
+                
     }
     
-    public String toString(){
+    public double notaRestante(){
+        if(alunoClassificacao()){
+            return 0.0;
+        }else{
+            return 60.0 - showNota();
+        }
+    }
+    
+    /*public String toString(){
         return
                 "FINAL GRADE = " 
                 + 
                 String.format("%.2f%n", showNota())
                 +
                 String.format("%s%n", alunoClassificacao());                
-    }
+    }*/
 }

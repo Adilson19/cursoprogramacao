@@ -13,6 +13,12 @@ public class StudentExec {
         student.notaDois = sc.nextDouble();
         student.notaTres = sc.nextDouble();
         
+        if(student.showNota()){
+            System.out.println("PASS");
+        }else{
+            System.out.println("FAILED");
+        }
+        
         System.out.println(student);               
         sc.close();
     }
