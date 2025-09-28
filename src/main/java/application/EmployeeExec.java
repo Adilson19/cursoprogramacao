@@ -25,8 +25,6 @@ public class EmployeeExec {
         
         System.out.println();
         System.out.println("Updated data: " + employee);
-      
-        
        
         sc.close();
     }
