@@ -1,4 +1,4 @@
-package application;
+/*package application;
 import java.util.Locale;
 import java.util.Scanner;
 public class ProgramCalculator {
@@ -18,4 +18,4 @@ public class ProgramCalculator {
         
         sc.close();
     }
-}
+}*/

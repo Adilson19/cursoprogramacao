@@ -9,13 +9,8 @@ public class Student {
         return notaUm + notaDois + notaTres;
     }
     
-    public boolean alunoClassificacao(        
-        if(showNota() >= 60.0){
-            return true;
-        }else{
-            return false;
-        }
-                
+    public boolean alunoClassificacao(){        
+        return showNota() >= 60.0;             
     }
     
     public double notaRestante(){
