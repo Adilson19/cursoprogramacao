@@ -10,10 +10,10 @@ public class ProgramConstructorExec {
         Scanner sc = new Scanner(System.in);
         
         System.out.println("Enter product data: ");
-        System.out.println("Name: ");
+        System.out.print("Name: ");
         // Recebe uma variavel temporaria
         String name = sc.nextLine();
-        System.out.println("Price: ");
+        System.out.print("Price: ");
         //  Recebe uma variavel temporaria
         double price =  sc.nextDouble();
         /*  Apagamos as linhas que pede para digitar a quantidade em stock
@@ -23,6 +23,11 @@ public class ProgramConstructorExec {
         //  Apos preencher todas variaveis so assim podemos instanciar O Objeto
         //  Colocamos somente dois parametros
         ProductConstructor product = new ProductConstructor(name, price);
+        
+        product.setName("computer");
+        System.out.println("Updated name: " + product.getName());
+        product.setPrice(1200.00);//    Alterar - setPrice
+        System.out.println("Updated price: " + product.getPrice());//   Acessar - getPrice
         
         System.out.println();
         System.out.println("Product data: "+ product);
