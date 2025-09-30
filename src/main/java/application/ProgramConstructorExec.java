@@ -16,18 +16,21 @@ public class ProgramConstructorExec {
         System.out.println("Price: ");
         //  Recebe uma variavel temporaria
         double price =  sc.nextDouble();
+        /*  Apagamos as linhas que pede para digitar a quantidade em stock
         System.out.println("Quantity in stock: ");
         //  Recebe uma variavel temporaria
-        int quantity = sc.nextInt();
+        int quantity = sc.nextInt();*/
         //  Apos preencher todas variaveis so assim podemos instanciar O Objeto
-        ProductConstructor product = new ProductConstructor(name, price, quantity);
+        //  Colocamos somente dois parametros
+        ProductConstructor product = new ProductConstructor(name, price);
         
         System.out.println();
         System.out.println("Product data: "+ product);
         
         System.out.println();
         System.out.println("Enter the number of products to be added in stock: ");
-        quantity = sc.nextInt();
+        //  Colocamos o int antes do nome da variavel para demostrar o tipo de dado que essa variavel irah receber
+        int quantity = sc.nextInt();
         product.addProducts(quantity);
         
         System.out.println();
