@@ -4,19 +4,15 @@ public class Banco {
     private String name;
     private char response;
     private double initialValue;
-    private double depositValue;
-    private double sakeValue;
-    private double accountBalance;
+    //private double depositValue;
+    //private double sakeValue;
+    //private double accountBalance;
     
     //  Constructor
-    public Banco(int accountNumber, String name, double initialValue){
-        this.accountBalance = accountNumber;
+    public Banco(int accountNumber, String name, char response){
+        this.accountNumber = accountNumber;
         this.name = name;
-        if(response == 'y'){
-            this.initialValue = initialValue;
-        }else{
-            this.initialValue = 0;
-        }
+        
     }
     
     //  Setando e Getando as variaveis
@@ -35,32 +31,37 @@ public class Banco {
         this.initialValue = initialValue;
     }
     
-    public void setDepositValue(double depositValue){
-        this.depositValue = depositValue;
+    public double getInitialValue(){
+        return initialValue;
     }
     
+    /*
+    public void setDepositValue(double depositValue){
+        this.depositValue = depositValue;
+    }*/
+    /*
     public double getAccountBalance(){
         return accountBalance;
-    }
+    }*/
     
     
     //  Metodos usados pelas classes
-    public void deposit(){
-        depositValue += initialValue;
+    public void deposit(double initialValue){
+        this.initialValue += initialValue;
     }
     
-    public void sake(){
-        depositValue -= sakeValue - 5.00;
+    public void sake(double initialValue){
+        this.initialValue = initialValue - 5.00;
     }
     
     public String toString(){
                 return 
                 "Account "
-                + accountNumber
+                + String.format("%d", accountNumber)
                 + ", "
-                + name
+                + String.format(name)
                 + ", Balance: $ "
                 +
-                accountBalance;
+                String.format("%.2f", getInitialValue());
     }
 }
