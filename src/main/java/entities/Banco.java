@@ -5,6 +5,7 @@ public class Banco {
     protected double initialValue;
     protected double depositValue;
     protected double sakeValue;
+    protected double accountBalance;
     
     public void setName(String name){
         this.name = name;
@@ -23,5 +24,16 @@ public class Banco {
     
     public void sake(){
         depositValue -= sakeValue - 5.00;
+    }
+    
+    public String toString(){
+                return 
+                "Account "
+                + accountNumber
+                + ", "
+                + name
+                + ", Balance: $ "
+                +
+                accountBalance;
     }
 }
