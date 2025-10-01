@@ -4,8 +4,6 @@ public class Banco {
     private String name;
     private char response;
     private double initialValue;
-    //private double depositValue;
-    //private double sakeValue;
     private double accountBalance;
     
     //  Constructor
@@ -39,15 +37,6 @@ public class Banco {
         return accountBalance;
     }
     
-    /*
-    public void setDepositValue(double depositValue){
-        this.depositValue = depositValue;
-    }*/
-    /*
-    public double getAccountBalance(){
-        return accountBalance;
-    }*/
-    
     
     //  Metodos usados pelas classes
     public void deposit(double initialValue){
@@ -58,15 +47,4 @@ public class Banco {
     public void sake(double initialValue){
         this.accountBalance = (this.accountBalance - initialValue) - 5.00;
     }
-    /*
-    public String toString(){
-                return 
-                "Account "
-                + String.format("%d", accountNumber)
-                + ", "
-                + String.format(name)
-                + ", Balance: $ "
-                +
-                String.format("%.2f", getAccountBalance());
-    }*/
 }

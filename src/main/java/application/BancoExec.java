@@ -9,8 +9,6 @@ public class BancoExec {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         
-        
-        
         System.out.print("Enter account number: ");
         int accountNumber = sc.nextInt();
         System.out.print("Enter account holder: ");
