@@ -29,7 +29,8 @@ public class BancoExec {
             banco.setInitialValue(0);
         }
         System.out.println();
-        System.out.printf("Account data: %n" + banco);
+        System.out.printf("Account data: %n");
+        System.out.printf("Account %d , Holder: %s, Balance: $ %.2f", banco.getAccountNumber(), banco.getName(), banco.getInitialValue());
         System.out.println();
         
         System.out.print("Enter a deposit value: ");
@@ -38,14 +39,18 @@ public class BancoExec {
         sc.nextLine();
         System.out.println();
         System.out.println("Updated account data:");
-        System.out.printf("Account data: %n" + banco);
+        System.out.printf("Account data: %n");
+        System.out.printf("Account %d , Holder: %s, Balance: $ %.2f", banco.getAccountNumber(), banco.getName(), banco.getAccountBalance());
         System.out.println();
         
         System.out.print("Enter a withdraw value: ");
         banco.sake(initialValue);
         sc.nextLine();
         System.out.println("Updated account data:");
-        System.out.printf("Account data: %n" + banco.getAccountBalance());
+        System.out.printf("Account data: %n");
+        System.out.printf("Account %d , Holder: %s, Balance: $ %.2f", banco.getAccountNumber(), banco.getName(), banco.getAccountBalance());
         System.out.println();
+        
+        sc.close();
     }
 }

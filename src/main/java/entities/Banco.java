@@ -6,7 +6,7 @@ public class Banco {
     private double initialValue;
     //private double depositValue;
     //private double sakeValue;
-    //private double accountBalance;
+    private double accountBalance;
     
     //  Constructor
     public Banco(int accountNumber, String name, char response){
@@ -35,6 +35,10 @@ public class Banco {
         return initialValue;
     }
     
+    public double getAccountBalance(){
+        return accountBalance;
+    }
+    
     /*
     public void setDepositValue(double depositValue){
         this.depositValue = depositValue;
@@ -48,12 +52,13 @@ public class Banco {
     //  Metodos usados pelas classes
     public void deposit(double initialValue){
         this.initialValue += initialValue;
+        this.accountBalance = this.initialValue;
     }
     
     public void sake(double initialValue){
-        this.initialValue = initialValue - 5.00;
+        this.accountBalance = (this.accountBalance - initialValue) - 5.00;
     }
-    
+    /*
     public String toString(){
                 return 
                 "Account "
@@ -62,6 +67,6 @@ public class Banco {
                 + String.format(name)
                 + ", Balance: $ "
                 +
-                String.format("%.2f", getInitialValue());
-    }
+                String.format("%.2f", getAccountBalance());
+    }*/
 }
