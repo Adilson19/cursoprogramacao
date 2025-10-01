@@ -4,18 +4,18 @@ public class Account {
     private int number;
     private String holder;
     private double balance;
-    
+    //  Construtores
     public Account(int number, String holder){
         this.number = number;
         this.holder = holder;
     }
-    
+    //  Construtores
     public Account(int number, String holder, double initialDeposit){
         this.number = number;
         this.holder = holder;
         deposit(initialDeposit);
     }
-    
+    //  Metodos Set e Get
     public int getNumber(){
         return number;
     }
@@ -31,13 +31,22 @@ public class Account {
     public double getBalance(){
         return balance;
     }
-    
+    //  Metodos Usados
     public void deposit(double amount){
         balance += amount;
     }
     
-    public void withDraw(double amount){
+    public void withdraw(double amount){
         balance -= amount + 5.0;
+    }
+    
+    public String toString(){
+        return "Account "
+                + number
+                + ", Holder: "
+                + holder
+                + ", Balance: $ "
+                + String.format("%.2f", balance);
     }
 }
 
