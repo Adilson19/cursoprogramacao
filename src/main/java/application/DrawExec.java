@@ -10,7 +10,7 @@ public class DrawExec {
         
         System.out.println("Digite o tamanho do seu quadrado");
         Draw draw = new Draw();
-        draw.setSide = sc.nextInt();
+        draw.setSide = sc.nextString();
        
     }
 }
