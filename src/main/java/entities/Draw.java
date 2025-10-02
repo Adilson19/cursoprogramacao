@@ -1,29 +1,28 @@
 package entities;
 public class Draw {
-    private String side;
+    private int side;
     
-    public void setSide(String side){
+    public void setSide(int side){
         this.side = side;
     }
-    public String getSide(){
+    public int getSide(){
         return side;
     }
-    int tamanho = side.length();
-    public String drawSquare(){
-        for(int i = 0; i <= tamanho; i++){
-            for(int j = 0; j <= tamanho; j++){
-                return "*";
-            }
-            return "%n";
-        }
+    
+    public void tamanho(int tamanho){
+        this.tamanho = tamanho;
     }
     
+    public String drawSquare(){
+        return "*";
+    }
+    /*
     public String toString(){
         return "Tamanho do quadrado eh %d"
                 +
                 tamanho
                 +
                 drawSquare();
-    }
+    }*/
     
 }

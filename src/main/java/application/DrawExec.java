@@ -9,8 +9,9 @@ public class DrawExec {
         Scanner sc = new Scanner(System.in);
         
         System.out.println("Digite o tamanho do seu quadrado");
+        int side = sc.nextInt();
         Draw draw = new Draw();
-        draw.setSide = sc.nextString();
+        draw.drawSquare() = sc.nextInt();
        
     }
 }
