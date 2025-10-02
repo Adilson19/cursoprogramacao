@@ -10,7 +10,7 @@ public class Draw {
     }
     
     public void tamanho(int tamanho){
-        this.tamanho = tamanho;
+        //this.tamanho = tamanho;
     }
     
     public String drawSquare(){
