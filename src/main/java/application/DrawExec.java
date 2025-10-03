@@ -8,10 +8,12 @@ public class DrawExec {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         
+        Draw meuDesenho = new Draw();
         System.out.println("Digite o tamanho do seu quadrado");
-        int side = sc.nextInt();
-        Draw draw = new Draw();
-        //draw.drawSquare() = sc.nextInt();
+        int lado1 = sc.nextInt();
+        System.out.println("Quadrado com lado = " + lado1 + ":");
+        meuDesenho.drawSquare(lado1);
        
+        System.out.println("\n-------------------------\n");
     }
 }
