@@ -13,6 +13,7 @@ public class SomaVector {
         System.out.print("Digite um numero: ");
         sc.nextLine();
         vect[i] = sc.nextInt();
+        sc.nextLine();
     }
     System.out.print("VALORES = ");
     for(int i = 0; i < vect.length; i++){
