@@ -20,7 +20,7 @@ public class NumerosParesVector {
         System.out.println("NUMEROS PARES: ");
         int count = 0;
         for(int i = 0; i < vectNumero.length; i++){
-            if(((vectNumero[i] % 2 == 0)) && ((vectNumero[i] / vectNumero[i]) == 0)){
+            if(vectNumero[i] % 2 == 0){
                 System.out.printf("%d ", vectNumero[i]);
                 count++;
             }
