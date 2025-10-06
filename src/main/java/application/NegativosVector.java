@@ -6,11 +6,11 @@ public class NegativosVector {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         
-        System.out.println("Quantos numeros voce vai digitar? ");
+        System.out.print("Quantos numeros voce vai digitar? ");
         int n  = sc.nextInt();
         int[] vect = new int [n];
         for(int i = 0; i < vect.length; i++){
-            System.out.println("Digite um numero: ");
+            System.out.print("Digite um numero: ");
             vect[i] = sc.nextInt();
         }
         System.out.println("NUMEROS NEGATIVOS: ");
@@ -19,6 +19,7 @@ public class NegativosVector {
                 System.out.println(vect[i]);
             }
         }
+        sc.close();
     }
     
 }
