@@ -14,9 +14,9 @@ public class AlturasVector {
         String[] vectNome = new String[n];
         int[] vectIdade = new int[n];
         double[] vectAltura = new double[n];
-        
+        int cont1 = 1;
         for(int i = 0; i < vectIdade.length; i++){
-            System.out.printf("Dados da %da pessoa: ", i+1);
+            System.out.printf("Dados da %da pessoa: ", cont1++);
             System.out.println();
             System.out.print("Nome: ");
             vectNome[i] = sc.next();
