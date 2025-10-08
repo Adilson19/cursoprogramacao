@@ -28,4 +28,11 @@ public class EmployeeList {
         return salary;
     }
     
+    public void searchingSalaryForIncrease(Integer id){
+        this.id = id;
+    }
+    public void setPercentage(Double percent){
+        this.salary += percent * 10 / 100;
+    }
+    
 }
