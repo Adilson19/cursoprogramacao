@@ -8,6 +8,8 @@ public class ListExerciseExc {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         
+        System.out.print("How many employees will be registered? ");
+        int n = sc.nextInt();        
         
         
         sc.close();
