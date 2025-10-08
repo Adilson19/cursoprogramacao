@@ -31,8 +31,7 @@ public class MaisVelho {
                 String maiorIdadeNome = vectNome[idade];
             }
         }
-        System.out.print(maiorIdadeNome);
-                        
+        //System.out.print(maiorIdadeNome);                        
         sc.close();
     }
 }
