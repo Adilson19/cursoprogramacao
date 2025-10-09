@@ -1,13 +1,26 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package desafiosIPH;
-
-/**
- *
- * @author Sousa
- */
+import java.util.Scanner;
+import java.util.Locale;
 public class exercicio_004 {
+    public static void main(String[] args){
+        Locale.setDefault(Locale.US);
+        Scanner sc = new Scanner(System.in);
+        
+        int a, b, troca;
+        
+        System.out.println("Digite dois numeros: ");
+        a = sc.nextInt();        
+        sc.nextLine();
+        b = sc.nextInt();
+        System.out.printf("A = %d, B = %d", a,b);
+        
+        troca = a;
+        a = b;
+        b = troca;
+        System.out.println();
+        System.out.printf("Trocando A = %d, B = %d", a, b);
+        
+        sc.close();
+    }
     
 }
