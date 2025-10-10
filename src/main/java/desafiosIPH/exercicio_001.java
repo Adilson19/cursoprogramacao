@@ -3,7 +3,7 @@ package desafiosIPH;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class exercicio_001 {
+public class Exercicio_001 {
     public static void main(String[] args){
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
