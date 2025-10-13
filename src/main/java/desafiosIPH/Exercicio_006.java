@@ -8,17 +8,27 @@ public class Exercicio_006 {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         
-        int provaUm, provaDois, provaTres, peso;
+        double provaUm, provaDois, provaTres;
+        int pesoUm = 2, pesoDois = 3, pesoTres = 5;
         double media;
+        double calculoNumerador;
+        double calculoDenominador;
         
         System.out.println("Digite as notas do Aluno:");
-        provaUm = sc.nextInt();
-        provaDois = sc.nextInt();
-        provaTres = sc.nextInt();
+        provaUm = sc.nextDouble();
+        sc.nextLine();
+        provaDois = sc.nextDouble();
+        sc.nextLine();
+        provaTres = sc.nextDouble();
         
-        media = (provaUm*0.1 + provaDois*0.15 + provaTres*0.25)/3.0;
+        calculoNumerador = (provaUm*pesoUm) + (provaDois*pesoDois) + (provaTres*pesoTres);
+        calculoDenominador = pesoUm + pesoDois + pesoTres;
+        media =  calculoNumerador / calculoDenominador;
         
-        System.out.printf("Media = %.2f%n", media);
+        System.out.printf("Nota 1 - %.2f com Peso %d%n",provaUm, pesoUm);
+        System.out.printf("Nota 2 - %.2f com Peso %d%n",provaDois, pesoDois);
+        System.out.printf("Nota 3 - %.2f com Peso %d%n",provaTres, pesoTres);
+        System.out.printf("Media Final do Aluno = %.2f Valores%n", media);
         
         sc.close();
     }
