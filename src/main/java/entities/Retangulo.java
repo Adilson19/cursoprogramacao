@@ -1,5 +1,4 @@
 package entities;
-import util.Ponto;
 public class Retangulo {
     private float altura;
     private float largura;

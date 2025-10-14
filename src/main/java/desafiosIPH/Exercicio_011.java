@@ -8,6 +8,9 @@ public class Exercicio_011 {
 		Scanner sc = new Scanner(System.in);
 		Locale.setDefault(Locale.US);
 		
+		
+		
+		
 		sc.close();
 	}
 	

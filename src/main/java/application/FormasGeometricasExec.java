@@ -8,6 +8,6 @@ public class FormasGeometricasExec {
         Scanner sc = new Scanner(System.in);
         Locale.setDefault(Locale.US);
         
-        
+        sc.close();
     }
 }
