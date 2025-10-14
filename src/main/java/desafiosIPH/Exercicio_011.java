@@ -1,13 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package desafiosIPH;
 
-/**
- *
- * @author Sousa
- */
+import java.util.Locale;
+import java.util.Scanner;
+
 public class Exercicio_011 {
-    
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		Locale.setDefault(Locale.US);
+		
+		sc.close();
+	}
+	
 }
