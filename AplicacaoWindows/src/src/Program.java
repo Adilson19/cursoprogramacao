@@ -23,7 +23,20 @@ public class Program {
 		System.out.println("|                                                   |");
 		System.out.println(" ===================================================");
 		
-		System.out.println("");
+		System.out.println("Digite a sua idade: ");
+		int idade = sc.nextInt();
+		System.out.println("Digite o seu nome: ");
+		String nome = sc.nextLine();		
+		System.out.println("Quantas horas voce trabalhou: ");
+		double qtHoras = sc.nextDouble();
+		System.out.println("Qual eh o seu sexo? (M/F)");
+		String sexo = sc.next();
+		System.out.println("Quanto deseja receber por hora? ");
+		double valorHora = sc.nextDouble();
+		
+		Funcionario funcionario = new Funcionario(idade, nome,sexo, qtHoras, valorHora);												
+		
+		
 		sc.close();
 	}
 }
