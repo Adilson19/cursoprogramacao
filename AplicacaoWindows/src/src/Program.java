@@ -1,6 +1,7 @@
 package src;
 
 import java.util.Locale;
+import entities.Funcionario;
 import java.util.Scanner;
 
 public class Program {
