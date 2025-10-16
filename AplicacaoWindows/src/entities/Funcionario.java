@@ -38,21 +38,23 @@ public class Funcionario {
 	public double getQtHoras() {
 		return qtHoras;
 	}
+	double salarioBruto;
 	public double getSalarioBruto() {
-		return ;
+		return salarioBruto;
 	}
+	double salarioLiquido;
 	public double getSalarioLiquido() {
-		return ;
+		return salarioLiquido;
 	}
 	public char getSexo() {
-		return ;
+		return sexo;
 	}
 	public double getValorHora() {
-		return;
+		return valorHora;
 	}
-	
+	double impostoRetido;
 	public double getImpostoRetido() {
-		return ;
+		return impostoRetido;
 	}
 	
 	
@@ -61,7 +63,8 @@ public class Funcionario {
 	
 	
 	public double reajustarValorHora(double x) {
-		
+		this.valorHora = x;
+		return valorHora;
 	}
 	
 	
