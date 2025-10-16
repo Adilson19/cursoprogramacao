@@ -9,6 +9,21 @@ public class Program {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
+		System.out.println(" ===================================================");
+		System.out.println("|                                                   |");
+		System.out.println("|                                                   |");
+		System.out.println("|                                                   |");
+		System.out.println("|                                                   |");
+		System.out.println("|                                                   |");
+		System.out.println("|                   SEJA BEM-VINDO                  |");
+		System.out.println("|                                                   |");
+		System.out.println("|                                                   |");
+		System.out.println("|                                                   |");
+		System.out.println("|                                                   |");
+		System.out.println("|                                                   |");
+		System.out.println(" ===================================================");
+		
+		System.out.println("");
 		sc.close();
 	}
 }
