@@ -29,13 +29,13 @@ public class Program {
 		String nome = sc.nextLine();		
 		System.out.println("Quantas horas voce trabalhou: ");
 		double qtHoras = sc.nextDouble();
-		System.out.println("Qual eh o seu sexo? (M/F)");
-		String sexo = sc.next();
 		System.out.println("Quanto deseja receber por hora? ");
 		double valorHora = sc.nextDouble();
+		System.out.println("Qual eh o seu sexo? (M/F)");
+		String sexo = sc.next();
 		
-		Funcionario funcionario = new Funcionario(idade, nome,sexo, qtHoras, valorHora);												
 		
+		Funcionario funcionario = new Funcionario(idade, nome,sexo, qtHoras, valorHora);	
 		
 		sc.close();
 	}
