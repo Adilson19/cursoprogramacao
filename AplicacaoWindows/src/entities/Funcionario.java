@@ -10,11 +10,11 @@ public class Funcionario {
 	public Funcionario(){
 		
 	}
-	public Funcionario(int i, String n, char s, double q, double v){
+	public Funcionario(int i, String n, char sexo, double q, double v){
 		this.idade = i;
 		this.nome = n;
 		this.qtHoras = q;
-		this.sexo = s;
+		this.sexo = sexo;
 		this.valorHora = v;
 	}
 	

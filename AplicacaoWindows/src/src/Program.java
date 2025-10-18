@@ -32,10 +32,13 @@ public class Program {
 		System.out.println("Quanto deseja receber por hora? ");
 		double valorHora = sc.nextDouble();
 		System.out.println("Qual eh o seu sexo? (M/F)");
-		String sexo = sc.next();
+		char sexo = sc.next().charAt(0);
 		
 		
 		Funcionario funcionario = new Funcionario(idade, nome,sexo, qtHoras, valorHora);	
+		
+		
+		
 		
 		sc.close();
 	}
