@@ -36,7 +36,8 @@ public class Program {
 		
 		
 		Funcionario funcionario = new Funcionario(idade, nome,sexo, qtHoras, valorHora);	
-		
+		System.out.println("Preencha os seus dados");
+		funcionario = sc.nextLine();
 		
 		
 		
