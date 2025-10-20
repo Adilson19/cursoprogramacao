@@ -17,12 +17,21 @@ public class Main {
 		for(int i = 0; i < n; i++) {
 			vect[i] = sc.nextInt();
 		}
-		int cont = 1;
+		int contPares = 0;
+		int contImpares = 0;
 		for(int i = 0; i < n; i++) {
-			if(){
-				
+			int numero = vect[i];
+			if(numero % 2 == 0){
+				contPares++;
+			}else{
+				contImpares++;
 			}
 		}
+		
+		System.out.println("\n--- Resultado da Contagem ---");
+        System.out.println("Total de números lidos: " + n);
+        System.out.println("Quantidade de números PARES: " + contPares);
+        System.out.println("Quantidade de números ÍMPARES: " + contImpares);
 		
 		sc.close();
 	}
