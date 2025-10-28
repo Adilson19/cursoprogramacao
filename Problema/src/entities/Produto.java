@@ -38,7 +38,7 @@ public class Produto {
 	//	Metodos
 	
 	public double valorTotalEmStoque(){
-		return 0;
+		return this.quantity;
 	}
 	
 	public void adicionarProduto(int quantity) {
