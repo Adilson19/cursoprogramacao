@@ -1,15 +1,18 @@
 package entities;
 
 public class OrderItem {
-	public Integer quantity;
-	public Double price;
+	private Integer quantity;
+	private Double price;
+	
+	private Product product;
 	
 	public OrderItem() {
 		
 	}
-	public OrderItem(Integer quantity, Double price) {
+	public OrderItem(Integer quantity, Double price, Product product) {
 		this.quantity = quantity;
 		this.price = price;
+		this.product = product;
 	}
 	
 	public void setQuantity(Integer quantity) {
@@ -25,8 +28,25 @@ public class OrderItem {
 	public Double getPrice() {
 		return price;
 	}
-	Double subTotal = 0.0;
-	public Double subTotal(Integer quantity, Double price){		
-		return subTotal = this.price * this.quantity;
+	
+	public void setProduct(Product product) {
+		this.product = product;
+	}
+	public Product getProduct() {
+		return product;
+	}
+	
+	public Double subTotal(){		
+		return price * quantity;
+	}
+	
+	public String toString() {
+		return product.getName()
+				+ ", $"
+				+ String.format("%.2f", price)
+				+ ", Quantity: "
+				+ quantity + 
+				", Subtotal: $"
+				+ String.format("%.2f", subTotal());
 	}
 }

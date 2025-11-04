@@ -1,8 +1,12 @@
 package entities;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Client {
+	//	Importando a classe de texto que transforma textos simples em data
+	private static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+	
 	public String name;
 	public String email;
 	public Date birthDate;
@@ -35,5 +39,10 @@ public class Client {
 	}
 	public void setBirthDate(Date birthDate) {
 		this.birthDate = birthDate;
+	}
+	
+	//	Transformando a data em toString para mostrar na tela
+	public String toString() {
+		return name + "(" + sdf.format(birthDate) + ") - " + email;
 	}
 }
