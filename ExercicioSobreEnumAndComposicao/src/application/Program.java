@@ -31,24 +31,28 @@ public class Program {
 		
 		System.out.println("Enter order data: ");
 		System.out.print("Status: ");
+		String statusStr = sc.nextLine();
 		OrderStatus status = OrderStatus.valueOf(sc.next());
 		
 		Order order = new Order(new Date(), status, client);
 		
 		System.out.print("How many items to this order? ");
 		int n = sc.nextInt(); 
+		sc.nextLine();
 		for(int i = 1; i <= n; i++) { 
-			System.out.print("Enter #"+ i +" item data: ");
+			System.out.println("Enter #"+ i +" item data: ");
 			System.out.print("Product name: ");
-			sc.nextLine();
+			//sc.nextLine();
 			String productName = sc.nextLine();
-			System.out.print("Produtct price: ");
-			double productPrice = sc.nextDouble();
+			System.out.print("Product price: ");
+			Double productPrice = sc.nextDouble();
+			sc.nextLine();
 			
 			Product product = new Product(productName, productPrice);
 			
 			System.out.print("Quantity: ");
 			int quantity = sc.nextInt();
+			sc.nextLine();
 			
 			OrderItem orderItem = new OrderItem(quantity, productPrice, product);
 			
