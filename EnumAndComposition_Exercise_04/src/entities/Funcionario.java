@@ -17,4 +17,12 @@ public class Funcionario {
 	public Double getSalario() {
 		return salario;
 	}
+	
+	public String getNome() {
+		return nome;
+	}
+	
+	public String toString() {
+		return nome + " (" + nivel + ")" + " - Salario: R$" + String.format("%.2f", salario);
+	}
 }
