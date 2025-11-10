@@ -2,13 +2,16 @@ package application;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
+
+import entities.ImportedProduct;
 import entities.Product;
+import entities.UsedProduct;
 
 public class Program {
 
@@ -26,12 +29,15 @@ public class Program {
 			System.out.println("Product #" + i + " data:");
 			System.out.print("Common, used or imported (c/u/i)? ");
 			char ch = sc.next().charAt(0);
+			
 			if(ch == 'c') {
 				System.out.print("Name: ");
 				sc.nextLine();
 				String name = sc.nextLine();
 				System.out.print("Price: ");
 				Double price = sc.nextDouble();
+				list.add(new Product(name, price));
+				
 			}else if(ch == 'u') {
 				System.out.print("Name: ");
 				sc.nextLine();
@@ -39,15 +45,19 @@ public class Program {
 				System.out.print("Price: ");
 				Double price = sc.nextDouble();
 				System.out.print("Manufacture date (DD/MM/YYYY): ");
-				Date md = sdf.parse(sc.next());
+				LocalDate manufactureDate = LocalDate.parse(sc.next(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+				list.add(new UsedProduct(name, price, manufactureDate));
 				
 			}else if(ch == 'i'){
 				System.out.print("Name: ");
+				sc.nextLine();
 				String name = sc.nextLine();
 				System.out.print("Price: ");
 				Double price = sc.nextDouble();
 				System.out.print("Customs fee: ");
-				Double customs = sc.nextDouble();
+				Double customsFee = sc.nextDouble();
+				list.add(new ImportedProduct(name, price, customsFee));
+				
 			}else {
 				System.out.println("Por favor digite uma letra que esta entre parenteses!");
 			}
@@ -57,7 +67,7 @@ public class Program {
 		System.out.println();
 		System.out.println("PRICE TAGS:");
 		for(Product product : list) {
-			System.out.println();
+			System.out.println(product.priceTag());
 		}
 		
 		sc.close();
