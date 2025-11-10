@@ -10,7 +10,7 @@ public class Gato extends Animal {
 	}
 	
 	@Override
-	public String emitrSom() {
+	public String emitirSom() {
 		return getNome() + " mia: Miau!" ;
 	}
 }

@@ -24,7 +24,7 @@ public class Animal {
 		this.idade = idade;
 	}
 	
-	public String emitrSom() {
+	public String emitirSom() {
 		return "O animal faz um som.";
 	}
 }

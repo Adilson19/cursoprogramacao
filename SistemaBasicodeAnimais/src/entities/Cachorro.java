@@ -10,7 +10,7 @@ public class Cachorro extends Animal {
 	}
 	
 	@Override
-	public String emitrSom() {
+	public String emitirSom() {
 		return getNome() + " late: Au Au!";
 	}
 	
