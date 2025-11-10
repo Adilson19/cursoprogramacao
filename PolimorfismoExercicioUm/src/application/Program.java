@@ -4,6 +4,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
@@ -50,6 +51,13 @@ public class Program {
 			}else {
 				System.out.println("Por favor digite uma letra que esta entre parenteses!");
 			}
+		}
+		
+		
+		System.out.println();
+		System.out.println("PRICE TAGS:");
+		for(Product product : list) {
+			System.out.println();
 		}
 		
 		sc.close();
