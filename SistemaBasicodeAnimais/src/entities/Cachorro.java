@@ -9,4 +9,12 @@ public class Cachorro extends Animal {
 		super(nome, idade);
 	}
 	
+	@Override
+	public String emitrSom() {
+		return getNome() + " late: Au Au!";
+	}
+	
+	public String brincar() {
+		return "Brincando de apanhar a bola";
+	}
 }

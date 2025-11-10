@@ -9,4 +9,8 @@ public class Gato extends Animal {
 		super(nome, idade);
 	}
 	
+	@Override
+	public String emitrSom() {
+		return getNome() + " mia: Miau!" ;
+	}
 }
