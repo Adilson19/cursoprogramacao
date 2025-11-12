@@ -47,9 +47,14 @@ public class Program {
 		System.out.println();
 		System.out.println("TAXES PAID:");
 		for(Pessoa pessoa : list) {
-			System.out.println();
+			System.out.println(pessoa.getNome() + ": $ " + pessoa.pagarImposto());
 		}
 		
+		System.out.println();
+		System.out.println("TOTAL TAXES: $ ");
+		for(Pessoa pessoa : list) {
+			System.out.println();
+		}
 		sc.close();
 	}
 

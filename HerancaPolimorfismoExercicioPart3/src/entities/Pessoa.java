@@ -11,10 +11,10 @@ public abstract class Pessoa {
 		this.nome = nome;
 		this.rendaAnual = rendaAnual;
 	}
-	public String getName() {
+	public String getNome() {
 		return nome;
 	}
-	public void setName(String nome) {
+	public void setNome(String nome) {
 		this.nome = nome;
 	}
 	public Double getRendaAnual() {
