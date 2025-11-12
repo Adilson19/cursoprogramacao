@@ -24,37 +24,45 @@ public class Program {
 			char ch = sc.next().charAt(0);
 			if(ch == 'i') {
 				System.out.print("Name: ");
+				sc.nextLine();
 				String nome = sc.nextLine();
 				System.out.print("Anual Income: ");
-				Double rendaAnual = sc.nextDouble();
+				double rendaAnual = sc.nextDouble();				
 				System.out.print("Health expenditures: ");
-				Double gastosComSaude = sc.nextDouble();
+				sc.nextLine();
+				double gastosComSaude = sc.nextDouble();
+				
 				list.add(new PessoaFisica(nome, rendaAnual, gastosComSaude));
 				
 			}else if(ch == 'c') {
 				System.out.print("Name: ");
+				sc.nextLine();
 				String nome = sc.nextLine();
 				System.out.println("Anual Income: ");
-				Double rendaAnual = sc.nextDouble();
+				double rendaAnual = sc.nextDouble();
 				System.out.print("Number of employees: ");
-				Integer numeroDeFuncionarios = sc.nextInt();
+				int numeroDeFuncionarios = sc.nextInt();
+				
 				list.add(new PessoaJuridica(nome, rendaAnual, numeroDeFuncionarios));
 				
 			}
-			
 		}
 		
 		System.out.println();
 		System.out.println("TAXES PAID:");
 		for(Pessoa pessoa : list) {
-			System.out.println(pessoa.getNome() + ": $ " + pessoa.pagarImposto());
+			System.out.println(pessoa.getNome() + ": $ " + String.format("%.2f", pessoa.pagarImposto()));
 		}
 		
 		System.out.println();
+		
 		System.out.println("TOTAL TAXES: $ ");
+		double soma = 0.0;
 		for(Pessoa pessoa : list) {
-			System.out.println();
+			soma += pessoa.pagarImposto();
 		}
+		System.out.println(String.format("%.2f", soma));
+		
 		sc.close();
 	}
 
