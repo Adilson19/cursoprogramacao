@@ -10,8 +10,22 @@ public class PessoaJuridica extends Pessoa {
 	public PessoaJuridica(String nome, Double rendaAnual, int numeroDeFuncionarios) {
 		super(nome, rendaAnual);
 		this.numeroDeFuncionarios = numeroDeFuncionarios;
+	}	
+	
+	public Integer getNumeroDeFuncionarios() {
+		return numeroDeFuncionarios;
 	}
-	
-	
-	
+
+	public void setNumeroDeFuncionarios(Integer numeroDeFuncionarios) {
+		this.numeroDeFuncionarios = numeroDeFuncionarios;
+	}
+
+	@Override
+	public Double pagarImposto() {
+		if(numeroDeFuncionarios < 10) {
+			return 16.0;
+		}else {
+			return 14.0;
+		}
+	}
 }
