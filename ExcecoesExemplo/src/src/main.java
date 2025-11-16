@@ -1,7 +1,6 @@
-package application;
+package src;
 
 import java.util.InputMismatchException;
-import java.util.ArrayIndexOutOfBoundsException;
 import java.util.Scanner;
 
 class Program{
