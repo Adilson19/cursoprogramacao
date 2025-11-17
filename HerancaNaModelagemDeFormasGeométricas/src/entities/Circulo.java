@@ -10,8 +10,15 @@ public class Circulo extends FormaGeometrica {
 		this.raio = raio;
 	}
 	
+	public double getRaio() {
+		return raio;
+	}
+	public void setRaio(double raio) {
+		this.raio = raio;
+	}
+	
 	@Override
 	public Double calcularArea() {
-		return Math.PI * raio;
+		return Math.PI * getRaio() * getRaio();
 	}
 }
