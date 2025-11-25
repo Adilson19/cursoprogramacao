@@ -1,5 +1,7 @@
 package src;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 import entities.Funcionario;
 import java.util.Scanner;
@@ -8,6 +10,7 @@ public class Program {
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
+		List<Funcionario> list = new ArrayList<>();
 		
 		System.out.println(" ===================================================");
 		System.out.println("|                                                   |");
@@ -37,7 +40,9 @@ public class Program {
 		
 		Funcionario funcionario = new Funcionario(idade, nome,sexo, qtHoras, valorHora);	
 		System.out.println("Preencha os seus dados");
-		funcionario = ;
+		for(Funcionario f : list) {
+			System.out.print(f);
+		}
 		
 		
 		
