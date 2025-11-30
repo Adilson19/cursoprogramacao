@@ -44,7 +44,7 @@ public class Reservation {
 
 	@Override
 	public String toString() {
-		return "Room"
+		return "Room "
 				+ roomNumber
 				+ ", check-in: "
 				+ sdf.format(checkIn)
