@@ -1,13 +1,7 @@
 package application;
-//	Classe responsavel por tratar os erros
-class idadeInvalidaError extends Exception{
-	private static final long serialVersionUID = 1L;
 
-	public idadeInvalidaError(String mensagem) {
-		super(mensagem);
-	}
-	
-}
+import model.exceptions.idadeInvalidaError;
+
 public class Program {
 	public static void validarIdade(int idade) throws idadeInvalidaError{
 		if(idade < 0 || idade > 150) {
