@@ -1,8 +1,10 @@
 package model.exceptions;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class TryingOpenFile {
 	private String fileName;
@@ -17,11 +19,17 @@ public class TryingOpenFile {
 	}
 	public void tryingOpenFileException(String nameFile) {
 		FileReader reader = null; 
+		File file = new File("C:\\temp\\"+getFileName());
+		Scanner sc = null;
+		
 		try {
 			System.out.println("Tentando abrir o arquivo: " + getFileName() + "...");
-			
-			reader = new FileReader(this.fileName);
-			System.out.println("Arquivo aberto com sucesso! Pronto para leitura");
+			sc = new Scanner(file);
+			if(sc != null) {
+				reader = new FileReader(this.fileName);
+				System.out.println("Arquivo aberto com sucesso! Pronto para leitura");
+			}
+			System.out.println("O arquivo nao existe! ");		
 		}
 		catch(FileNotFoundException e) {
 			System.out.println("Erro: O aquivo '" + getFileName() + "' nao foi encontrado.");
