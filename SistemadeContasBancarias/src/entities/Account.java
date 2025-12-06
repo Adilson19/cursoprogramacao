@@ -1,10 +1,18 @@
 package entities;
 
-public class Account {
+public abstract class Account {
 	private Double balance;
 	private Integer accountNumber;
 	
 	
+	public Account() {
+	}
+
+	public Account(Double balance, Integer accountNumber) {
+		this.balance = balance;
+		this.accountNumber = accountNumber;
+	}
+
 	public Double getBalance() {
 		return balance;
 	}
